@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title CodeWithAman
+        block script
+        block style
+    body 
+        nav.nav
+            ul.navbar1
+                div.logo
+                    i.fa.fa-code
+                li: a(href="/") Home
+                li: a(href="#") About
+                li: a(href="#") Contact
+                li: a(href="#") Help
+            ul.navbar2
+                li: a(href="/login" id="login") Log In
+                li: a(href="/signup" id="signup") Sign Up
+        block content
+
+        script(src="https://kit.fontawesome.com/ba97939eef.js" crossorigin="anonymous")
+        script(src="../static/eye.js")
+    

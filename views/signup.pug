@@ -1,0 +1,30 @@
+extends base.pug
+block script
+
+block style
+    link(rel="stylesheet", href="../static/signup.css")
+    
+block content
+    div.lcontainer
+        div.container
+            h1 Sign Up as new user
+            form(action='/signup' method='post')
+                div.boxl
+                    i.fa.fa-envelope
+                    input#email(type='email' name='email' placeholder='Enter Your Email')
+                div.boxl
+                    <i class="fa fa-info"></i>
+                    input#name(type='name' name='name' placeholder='Enter Your Name')
+                div.boxl
+                    <i class="fa fa-user"></i>
+                    input#username(type='text' name='username' placeholder='Create Your Username')
+                div.boxl
+                    i.fa.fa-key
+                    input#password(type='password' name='password' placeholder='Create Password')
+                    i#eye.fa.fa-eye
+                    i#eye-slash.fa.fa-eye-slash
+                button.btn Sign Me Up
+            p.popup#success Your Acoount is successfully been created.
+            p.popup#fail Something went wrong.
+    script(src='../static/script.js')
+    script(src='../static/eye.js')

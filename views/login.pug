@@ -1,0 +1,22 @@
+extends base.pug
+block script
+
+block style
+    link(rel="stylesheet", href="../static/login.css")
+    
+block content
+    div.lcontainer
+        div.container
+            h1 Login to CodeWithAman
+            form(action='/login' method="post")
+                div.boxl
+                    i.fa.fa-envelope
+                    input#email(type='email' name='email' placeholder='Enter Your Email')
+                div.boxl
+                    i.fa.fa-key
+                    input#password(type='password' name='password' placeholder='Enter Your Password')
+                    i#eye.fa.fa-eye
+                    i#eye-slash.fa.fa-eye-slash
+                button.btn Log In
+    script(src='../static/script.js')
+    script(src='../static/eye.js')
